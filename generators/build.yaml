@@ -9,7 +9,7 @@ builders:
     target: ":generators"
     import: "package:generators/generators.dart"
     builder_factories: ["generateJsonClass"] #Builder name(BuilderOptions)
-    build_extensions: { ".dart": [".g.dart"] }
+    build_extensions: { ".dart": [".g.part"] }
     auto_apply: dependents
     build_to: cache
     applies_builders: ["source_gen|combining_builder"]
